@@ -1,0 +1,10 @@
+body{
+    background-color:rgba(255, 0, 0, 0.2);
+}
+.navbar{
+    border-radius: 0;
+}
+.navbar-brand{
+    font-family: 'Tangerine', cursive;
+    font-size: 250%
+}

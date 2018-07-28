@@ -1,9 +1,12 @@
-{% if all_albums %}
-    <ul>
-        {% for album in all_albums %}
-        <li><a href="{% url 'accounts:detail' album.id%}">{{ album.album_title }}</a></li>
-        {% endfor %}
-    </ul>
-{% else %}
-    <h3>You don't have any albums!</h3>
-{% endif %}
+<!-- loads the path to static files -->
+{% extends 'accounts/base.html' %}
+
+{% block body %}
+
+        <ul>
+            {% for album in all_albums %}
+            <li><a href="{% url 'accounts:detail' album.id%}">{{ album.album_title }}</a></li>
+            {% endfor %}
+        </ul>
+
+{% endblock %}
