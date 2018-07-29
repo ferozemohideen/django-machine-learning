@@ -1,3 +1,5 @@
+{% extends 'homepage/base.html' %}
+{% block body %}
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'imageprocessing/style.css' %}" />
 
@@ -10,3 +12,4 @@
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
+{% endblock %}
