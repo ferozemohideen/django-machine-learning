@@ -1,3 +1,6 @@
 .navbar-brand {
     font-family: 'Roboto', cursive;
 }
+body {
+    background-image: white url("background.png");
+}

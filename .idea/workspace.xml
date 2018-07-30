@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b10b435f-0d62-48b5-92ad-a0fc51124143" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/faces.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/testdetail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/imageprocessing/testKNN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/imageprocessing/static/homepage/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/imageprocessing/static/homepage/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/imageprocessing/templates/homepage/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/imageprocessing/templates/homepage/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/imageprocessing/templates/homepage/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/imageprocessing/templates/homepage/homepage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/imageprocessing/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/imageprocessing/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/imageprocessing/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/imageprocessing/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testKNN.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/testdetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/testdetail.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -52,8 +43,8 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/imageprocessing/templates/homepage/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+            <state relative-caret-position="153">
+              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
               <folding>
                 <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
@@ -68,20 +59,26 @@
       <file leaf-file-name="testdetail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/testdetail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="334">
+              <caret line="77" column="43" selection-start-line="77" selection-start-column="43" selection-end-line="77" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mysite/imageprocessing/static/homepage/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/detail.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -171,10 +168,10 @@
         <option value="$PROJECT_DIR$/mysite/imageprocessing/urls.py" />
         <option value="$PROJECT_DIR$/mysite/imageprocessing/views.py" />
         <option value="$PROJECT_DIR$/mysite/imageprocessing/testKNN.py" />
-        <option value="$PROJECT_DIR$/mysite/imageprocessing/static/homepage/style.css" />
         <option value="$PROJECT_DIR$/mysite/imageprocessing/templates/homepage/base.html" />
-        <option value="$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/testdetail.html" />
         <option value="$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/detail.html" />
+        <option value="$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/testdetail.html" />
+        <option value="$PROJECT_DIR$/mysite/imageprocessing/static/homepage/style.css" />
       </list>
     </option>
   </component>
@@ -276,7 +273,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mysite/manage.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../AxoSim" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -405,12 +402,12 @@
     <frame x="762" y="0" width="779" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21773142" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21773142" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3310153" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3310153" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32962447" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -469,7 +466,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../AxoSim/data_visualization.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tutorial/tutorial/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -503,6 +506,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -535,7 +541,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../AxoSim/data_visualization.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tutorial/tutorial/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -705,27 +717,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/testdetail.html">
+    <entry file="file://$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/imageprocessing/static/homepage/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/imageprocessing/templates/homepage/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        <state relative-caret-position="153">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
           <folding>
             <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
@@ -736,10 +738,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/detail.html">
+    <entry file="file://$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/testdetail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        <state relative-caret-position="334">
+          <caret line="77" column="43" selection-start-line="77" selection-start-column="43" selection-end-line="77" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/imageprocessing/static/homepage/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
         </state>
       </provider>
     </entry>
