@@ -1,4 +1,4 @@
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 from django.views import generic
@@ -42,3 +42,5 @@ def vote(request, question_id):
         # user hits the Back button.
         return HttpResponseRedirect(reverse('imageprocessing:results', args=(question.id,)))
 
+def classification(request):
+    return render(request, 'imageprocessing/detail.html')
