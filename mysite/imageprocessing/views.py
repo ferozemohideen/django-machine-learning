@@ -4,6 +4,7 @@ from django.urls import reverse
 from django.views import generic
 
 from .models import Choice, Question
+# from .testKNN import knn
 
 
 class IndexView(generic.ListView):
@@ -46,4 +47,10 @@ def classification(request):
     return render(request, 'imageprocessing/glasses/indexdetail.html')
 
 def fred(request):
-    return render(request, 'imageprocessing/glasses/Fred.html')
+    context = {}
+    if request.GET:
+        numneighbors = request.GET['numneighbors']
+        # get return values
+    return render(request, 'imageprocessing/glasses/Fred.html', context)
+
+
