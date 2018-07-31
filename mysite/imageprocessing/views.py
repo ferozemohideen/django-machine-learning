@@ -17,7 +17,7 @@ class IndexView(generic.ListView):
 
 class DetailView(generic.DetailView):
     model = Question
-    template_name = 'imageprocessing/detail.html'
+    template_name = 'imageprocessing/Fred.html'
 
 
 class ResultsView(generic.DetailView):
@@ -30,7 +30,7 @@ def vote(request, question_id):
         selected_choice = question.choice_set.get(pk=request.POST['choice'])
     except (KeyError, Choice.DoesNotExist):
         # Redisplay the question voting form.
-        return render(request, 'polls/detail.html', {
+        return render(request, 'polls/Fred.html', {
             'question': question,
             'error_message': "You didn't select a choice.",
         })
@@ -43,4 +43,7 @@ def vote(request, question_id):
         return HttpResponseRedirect(reverse('imageprocessing:results', args=(question.id,)))
 
 def classification(request):
-    return render(request, 'imageprocessing/detail.html')
+    return render(request, 'imageprocessing/glasses/indexdetail.html')
+
+def fred(request):
+    return render(request, 'imageprocessing/glasses/Fred.html')
