@@ -9,18 +9,23 @@
         <div class="col-lg-4">
           <h1 class="my-4">Who's Got Glasses?</h1>
           <div class="list-group">
-            <a href="{% url 'imageprocessing:fred' %}" class="list-group-item {% block whichactive1 %}{% endblock %}">Frederick</a>
-            <a href="#" class="list-group-item {% block whichactive2 %}{% endblock %}" >Johannes</a>
-            <a href="#" class="list-group-item {% block whichactive3 %}{% endblock %}">T'Challa</a>
+            <a href="{% url 'imageprocessing:fred' %}" class="list-group-item {% block whichactive1 %}{% endblock %}">Frederick <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span></a>
+            <a href="#" class="list-group-item {% block whichactive2 %}{% endblock %}" >Johannes <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span></a>
+            <a href="#" class="list-group-item {% block whichactive3 %}{% endblock %}">Jimothy</a>
+              <a href="#" class="list-group-item {% block whichactive4 %}{% endblock %}">Lana</a>
           </div>
+            <div class="list-group">
+                <a href="/imageprocessing/glasses/" class="list-group-item">Back to home</a>
+            </div>
         </div>
         <!-- /.col-lg-3 -->
         {% block pagecontent %}
         Introduction to who's got glasses
         {% endblock %}
         <!-- /.col-lg-9 -->
-
       </div>
 
+
     </div>
+
 {% endblock %}

@@ -2,5 +2,5 @@
     font-family: 'Roboto', cursive;
 }
 body {
-    background-image: white url("background.png");
+    background: white url("background.png");
 }
