@@ -1,5 +1,4 @@
 {% extends 'imageprocessing/glasses/indexdetail.html' %}
-{{ numneighbors }}
 {% load staticfiles %}
 
 {% block title %}Glasses{% endblock %}
@@ -50,6 +49,40 @@
             </div>
           </div>
           <!-- /.card -->
+          {% if  context  %}
+            <div class="card mt-4">
+            <img class="card-img-top img-fluid" src="{% static 'graphs/ROC.png' %}" alt="">
+            <div class="card-body">
+              <h1 class="card-title">We are {{ context.certainty|stringformat:".2f" }} percent sure that Frederick is wearing glasses (based off this single image).</h1>
+              <h4>$24.99</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
+              <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+              4.0 stars
+              <h2 class="card-title">Confusion Matrix: </h2>
+              <table class="table table-striped table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Predicted: Yes</th>
+                    <th scope="col">Predicted: No</th>
+                  </tr>
+                </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Actual: Yes</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Actual: No</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                    </tr>
+                  </tbody>
+              </table>
+            </div>
+          </div>
+          {% endif %}
         </div>
 {% endblock %}
 

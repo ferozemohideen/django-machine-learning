@@ -4,11 +4,15 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy.io import loadmat
 from sklearn.model_selection import train_test_split
+import os
 
+def knn(name, neighbors, dir):
+    neighbors = int(neighbors)
+    name = int(name)
+    file_path = os.path.join(dir, 'imageprocessing/faces.mat')
 
-def knn(name, neighbors):
     returnvals = {}
-    data = loadmat('faces.mat')
+    data = loadmat(file_path)
     array = data['faces']
     array = array.transpose(2,0,1).reshape(400,-1)
 
@@ -36,6 +40,7 @@ def knn(name, neighbors):
     # scaled_features = scaler.transform(df)
     # df_feat = pd.DataFrame(scaled_features)
 
+    fred = df.iloc[180]
     df.drop(df.index[[180,181,182,183,184,185,186,187,188,189,
                       190,191,192,193,194,195,196,197,198,199,
                       260,261,262,263,264,265,266,267,268,269]], inplace=True)
@@ -49,9 +54,16 @@ def knn(name, neighbors):
     knn.fit(X_train, y_train)
     pred = knn.predict(X_test)
 
-    people = {'1': 180, '2': 190}
-    returnvals['certainty'] = knn.predict_proba(np.array(X_test.iloc[people[str(name)]]).reshape(1,-1))
-    returnvals['prediction'] = knn.predict(np.array(X_test.iloc[people[str(name)]]).reshape(1,-1))
+
+    # if name == 1:
+    #     index = 180
+    # else:
+    #     index = 190
+
+    returnvals['certainty'] = knn.predict_proba(np.array(fred).reshape(1,-1))
+    returnvals['certainty'] = returnvals['certainty'][0][0]*100
+    # print(returnvals['certainty'])
+    returnvals['prediction'] = knn.predict(np.array(fred).reshape(1,-1))
 
     # check results!
     from sklearn.metrics import classification_report, confusion_matrix
@@ -83,8 +95,9 @@ def knn(name, neighbors):
     fpr, tpr, threshold = metrics.roc_curve(y_test, preds)
     roc_auc = metrics.auc(fpr, tpr)
 
+    plt.clf()
     sns.set_style('darkgrid')
-    plt.title('Receiver Operating Characteristic')
+    plt.title('Receiver Operating Characteristic for Num Neighbors: %d' % neighbors)
     plt.plot(fpr, tpr, 'b', label = 'AUC = %0.2f' % roc_auc)
     plt.legend(loc = 'lower right')
     plt.plot([0, 1], [0, 1],'r--')
@@ -92,6 +105,6 @@ def knn(name, neighbors):
     plt.ylim([0, 1])
     plt.ylabel('True Positive Rate')
     plt.xlabel('False Positive Rate')
-    plt.savefig('static/graphs/ROC.png')
+    plt.savefig(os.path.join(dir, 'imageprocessing/static/graphs/ROC.png'))
 
     return returnvals

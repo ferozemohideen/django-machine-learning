@@ -2,6 +2,8 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 from django.views import generic
+from django.conf import settings
+base_dir = settings.BASE_DIR
 
 from .models import Choice, Question
 from .testKNN import knn
@@ -34,8 +36,8 @@ def fred(request):
     if request.GET:
         numneighbors = request.GET['numneighbors']
         # get return values
-        context = knn(name=1, neighbors=numneighbors)
+        context = knn(name=1, neighbors=numneighbors, dir=base_dir)
         print(context)
-    return render(request, 'imageprocessing/glasses/Fred.html', context)
+    return render(request, 'imageprocessing/glasses/Fred.html', {'context': context})
 
 
