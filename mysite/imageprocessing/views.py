@@ -4,7 +4,7 @@ from django.urls import reverse
 from django.views import generic
 
 from .models import Choice, Question
-# from .testKNN import knn
+from .testKNN import knn
 
 
 class IndexView(generic.ListView):
@@ -25,23 +25,6 @@ class ResultsView(generic.DetailView):
     model = Question
     template_name = 'imageprocessing/results.html'
 
-def vote(request, question_id):
-    question = get_object_or_404(Question, pk=question_id)
-    try:
-        selected_choice = question.choice_set.get(pk=request.POST['choice'])
-    except (KeyError, Choice.DoesNotExist):
-        # Redisplay the question voting form.
-        return render(request, 'polls/Fred.html', {
-            'question': question,
-            'error_message': "You didn't select a choice.",
-        })
-    else:
-        selected_choice.votes += 1
-        selected_choice.save()
-        # Always return an HttpResponseRedirect after successfully dealing
-        # with POST data. This prevents data from being posted twice if a
-        # user hits the Back button.
-        return HttpResponseRedirect(reverse('imageprocessing:results', args=(question.id,)))
 
 def classification(request):
     return render(request, 'imageprocessing/glasses/indexdetail.html')
@@ -51,6 +34,8 @@ def fred(request):
     if request.GET:
         numneighbors = request.GET['numneighbors']
         # get return values
+        context = knn(name=1, neighbors=numneighbors)
+        print(context)
     return render(request, 'imageprocessing/glasses/Fred.html', context)
 
 
