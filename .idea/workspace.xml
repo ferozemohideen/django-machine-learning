@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b10b435f-0d62-48b5-92ad-a0fc51124143" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/glasses/Jimothy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/glasses/Lana.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/imageprocessing/static/graphs/ROC.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/imageprocessing/static/graphs/ROC.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/imageprocessing/static/homestyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/imageprocessing/static/homestyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/imageprocessing/static/images/Johannes.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/imageprocessing/static/images/Johannes.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/glasses/Fred.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/glasses/Fred.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/glasses/Johannes.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/glasses/Johannes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/glasses/indexdetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/glasses/indexdetail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/imageprocessing/testKNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/imageprocessing/testKNN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/imageprocessing/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/imageprocessing/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/imageprocessing/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/imageprocessing/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,8 +18,8 @@
       <file leaf-file-name="indexdetail.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/glasses/indexdetail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="81" column="49" selection-start-line="81" selection-start-column="49" selection-end-line="81" selection-end-column="49" />
+            <state relative-caret-position="276">
+              <caret line="130" column="98" lean-forward="true" selection-start-line="130" selection-start-column="98" selection-end-line="130" selection-end-column="98" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#button#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#1;n#button#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -41,6 +31,7 @@
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#4572#4578#0" expanded="true" />
               </folding>
@@ -103,6 +94,18 @@
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testKNN.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/imageprocessing/testKNN.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1122">
+              <caret line="66" column="21" lean-forward="true" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -670,16 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/imageprocessing/testKNN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-399">
-          <caret line="66" column="21" lean-forward="true" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/imageprocessing/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
@@ -744,10 +737,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/imageprocessing/testKNN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" column="21" lean-forward="true" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/imageprocessing/templates/imageprocessing/glasses/indexdetail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="81" column="49" selection-start-line="81" selection-start-column="49" selection-end-line="81" selection-end-column="49" />
+        <state relative-caret-position="276">
+          <caret line="130" column="98" lean-forward="true" selection-start-line="130" selection-start-column="98" selection-end-line="130" selection-end-column="98" />
           <folding>
             <element signature="n#style#0;n#span#0;n#button#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#button#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -759,6 +762,7 @@
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#4572#4578#0" expanded="true" />
           </folding>
