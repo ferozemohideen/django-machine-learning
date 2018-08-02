@@ -6,19 +6,21 @@ body {
     font-family:  'Roboto', cursive;
 }
 /* Footer */
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-section {
-    padding: 20px 0;
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 80px; /* Margin bottom by footer height */
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #222222;
 }
 
-section .section-title {
-    text-align: center;
-    color: #007b5e;
-    margin-bottom: 50px;
-    text-transform: uppercase;
-}
-#footer {
-    background: #f95e6b !important;
-}
 
 

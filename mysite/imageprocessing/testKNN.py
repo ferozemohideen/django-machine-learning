@@ -17,11 +17,11 @@ def knn(name, neighbors, dir):
     array = array.transpose(2,0,1).reshape(400,-1)
 
     df = pd.DataFrame(array)
-    scores = np.zeros(370)
+    scores = np.zeros(396)
 
     # start indices of glasses-wearers
     # website ones are 180, 190, 260 !!
-    indices = np.array([10,30,50,120,130,160,240,270,300,330])
+    indices = np.array([10,30,50,120,130,160,240,260, 280,310,340])
     for i in indices:
         scores[i:i+10] = 1
 
@@ -41,9 +41,9 @@ def knn(name, neighbors, dir):
     # df_feat = pd.DataFrame(scaled_features)
 
     fred = df.iloc[180]
-    df.drop(df.index[[180,181,182,183,184,185,186,187,188,189,
-                      190,191,192,193,194,195,196,197,198,199,
-                      260,261,262,263,264,265,266,267,268,269]], inplace=True)
+    johannes = df.iloc[190]
+
+    df.drop(df.index[[180,190]], inplace=True)
 
     # train test split
     X_train, X_test, y_train, y_test = train_test_split(df, scores, test_size=0.3, random_state=42)
@@ -55,15 +55,15 @@ def knn(name, neighbors, dir):
     pred = knn.predict(X_test)
 
 
-    # if name == 1:
-    #     index = 180
-    # else:
-    #     index = 190
+    if name == 1:
+        person = fred
+    elif name == 2:
+        person = johannes
 
-    returnvals['certainty'] = knn.predict_proba(np.array(fred).reshape(1,-1))
+    returnvals['certainty'] = knn.predict_proba(np.array(person).reshape(1,-1))
     returnvals['certainty'] = returnvals['certainty'][0][0]*100
     # print(returnvals['certainty'])
-    returnvals['prediction'] = knn.predict(np.array(fred).reshape(1,-1))
+    returnvals['prediction'] = knn.predict(np.array(person).reshape(1,-1))
 
     # check results!
     from sklearn.metrics import classification_report, confusion_matrix

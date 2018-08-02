@@ -42,6 +42,11 @@ def fred(request):
 
 def johannes(request):
     context = {}
+    if request.GET:
+        numneighbors = request.GET['numneighbors']
+        # get return values
+        context = knn(name=2, neighbors=numneighbors, dir=base_dir)
+        print(context)
     return render(request, 'imageprocessing/glasses/Johannes.html', {'context': context})
 
 
