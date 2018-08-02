@@ -40,4 +40,8 @@ def fred(request):
         print(context)
     return render(request, 'imageprocessing/glasses/Fred.html', {'context': context})
 
+def johannes(request):
+    context = {}
+    return render(request, 'imageprocessing/glasses/Johannes.html', {'context': context})
+
 

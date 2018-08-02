@@ -15,8 +15,7 @@
 
 </head>
 <body>
-    <p>HELLO</p>
-    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <nav class="navbar navbar-light" style="background-color: #f95e6b;">
     <div class="container-field">
         <!-- Header -->
         <div class="navbar-header">
@@ -82,7 +81,7 @@
           <h1 class="my-4">Who's Got Glasses?</h1>
           <div class="list-group">
             <a href="{% url 'imageprocessing:fred' %}" class="list-group-item {% block whichactive1 %}{% endblock %}">Frederick <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span></a>
-            <a href="#" class="list-group-item {% block whichactive2 %}{% endblock %}" >Johannes <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span></a>
+            <a href="{% url 'imageprocessing:johannes' %}" class="list-group-item {% block whichactive2 %}{% endblock %}" >Johannes <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span></a>
             <a href="#" class="list-group-item {% block whichactive3 %}{% endblock %}">Jimothy</a>
               <a href="#" class="list-group-item {% block whichactive4 %}{% endblock %}">Lana</a>
           </div>
@@ -100,5 +99,21 @@
 
 
     </div>
+	<section id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p>This page was made with Python, Django, and Love. Feel free to reach out to me by email about any suggestions, and please visit my GitHub!</p>
+                    <p><a type="button" class="btn-floating btn-lg btn-git"><i class="fa fa-github"></i></a></p>
+
+                    <p class="h6">&copy All rights reversed. This doesn't actually mean anything, I'm just playing around with footers.</p>
+				</div>
+				</hr>
+			</div>
+		</div>
+	</section>
 </body>
+<!-- Footer -->
+
+	<!-- ./Footer -->
 </html>

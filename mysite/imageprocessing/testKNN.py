@@ -68,6 +68,11 @@ def knn(name, neighbors, dir):
     # check results!
     from sklearn.metrics import classification_report, confusion_matrix
     returnvals['cm'] = confusion_matrix(y_test,pred)
+    returnvals['cm1'] = returnvals['cm'][0][0]
+    returnvals['cm2'] = returnvals['cm'][0][1]
+    returnvals['cm3'] = returnvals['cm'][1][0]
+    returnvals['cm4'] = returnvals['cm'][1][1]
+
     returnvals['cr'] = classification_report(y_test,pred)
 
 
