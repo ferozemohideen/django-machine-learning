@@ -49,4 +49,22 @@ def johannes(request):
         print(context)
     return render(request, 'imageprocessing/glasses/Johannes.html', {'context': context})
 
+def jimothy(request):
+    context = {}
+    if request.GET:
+        numneighbors = request.GET['numneighbors']
+        # get return values
+        context = knn(name=3, neighbors=numneighbors, dir=base_dir)
+        print(context)
+    return render(request, 'imageprocessing/glasses/Jimothy.html', {'context': context})
+
+def lana(request):
+    context = {}
+    if request.GET:
+        numneighbors = request.GET['numneighbors']
+        # get return values
+        context = knn(name=4, neighbors=numneighbors, dir=base_dir)
+        print(context)
+    return render(request, 'imageprocessing/glasses/Lana.html', {'context': context})
+
 

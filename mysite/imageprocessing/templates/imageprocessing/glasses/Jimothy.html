@@ -2,16 +2,17 @@
 {% load staticfiles %}
 
 {% block title %}Glasses{% endblock %}
-{% block whichactive1 %}active{% endblock %}
+{% block whichactive3 %}active{% endblock %}
 {% block pagecontent %}
 
         <div class="col-lg-7 col-md-offset-1" style="background:white; border-radius:5%;">
 
           <div class="card mt-4">
-          <div class="text-center"><img class="card-img-top img-fluid" src="{% static 'images/Frederick.png' %}" alt="" style="padding-top:15px; border-radius:5%"></div>            <div class="card-body">
-              <h3 class="card-title">Frederick</h3>
-              <h4>Age: 39, Place of Residence: Menlo Park, CA</h4>
-              <p class="card-text">Man oh man, what a stunner! Frederick is a single ready to mingle who's just itching to be <i>your</i> nearest neighbor.
+            <div class="text-center"><img class="card-img-top img-fluid" src="{% static 'images/Jimothy.png' %}" alt="" style="padding-top:15px; border-radius:5%"></div>
+            <div class="card-body">
+              <h3 class="card-title">Jimothy</h3>
+              <h4>Age: 18, Place of Residence: Denver, Colorado</h4>
+              <p class="card-text">Jimothy is just trying to cast a wide neural net.
                 Select from down below to alter the model and view an ROC curve + confusion matrix.</i></p>
             </div>
           </div>
@@ -45,7 +46,7 @@
             <div class="card mt-4">
             <img class="card-img-top img-fluid" src="{% static 'graphs/ROC.png' %}" alt="">
             <div class="card-body">
-              <h1 class="card-title"><strong>We are {{ context.certainty|stringformat:".2f" }} percent sure that Frederick is wearing glasses using this number of neighbors (based off this single image).</strong></h1>
+              <h1 class="card-title"><strong>We are {{ context.certainty|stringformat:".2f" }} percent sure that Jimothy is NOT wearing glasses using this number of neighbors (based off this single image).</strong></h1>
               <h2 class="card-title">Confusion Matrix: </h2>
               <table class="table table-striped table-dark">
                 <thead>

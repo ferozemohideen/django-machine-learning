@@ -20,6 +20,6 @@ from . import views
 app_name = 'homepage'
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('imageprocessing/', include('imageprocessing.urls')),
-    path('', views.home)
+    path('', include('imageprocessing.urls')),
+    #path('', views.home)
 ]

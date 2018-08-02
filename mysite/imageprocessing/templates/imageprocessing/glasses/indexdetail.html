@@ -76,24 +76,57 @@
 </nav>
     <div class="container">
 
-      <div class="row">
+      <div class="row" style="padding:5px">
 
-        <div class="col-lg-4">
-          <h1 class="my-4">Who's Got Glasses?</h1>
-          <div class="list-group">
-            <a href="{% url 'imageprocessing:fred' %}" class="list-group-item {% block whichactive1 %}{% endblock %}">Frederick <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span></a>
-            <a href="{% url 'imageprocessing:johannes' %}" class="list-group-item {% block whichactive2 %}{% endblock %}" >Johannes <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span></a>
-            <a href="#" class="list-group-item {% block whichactive3 %}{% endblock %}">Jimothy</a>
-              <a href="#" class="list-group-item {% block whichactive4 %}{% endblock %}">Lana</a>
-          </div>
-            <div class="list-group">
-                <a href="/imageprocessing/glasses/" class="list-group-item">Back to home</a>
-                <a href="https://github.com/ferozemohideen/django-machine-learning" class="list-group-item">Full source code</a>
-            </div>
+        <div class="col-md-4" style="background:white; border-radius:5%">
+              <h1 class="my-4" style="color:blue;">Who's Got Glasses?</h1>
+              <div class="list-group">
+                <a href="{% url 'imageprocessing:fred' %}" class="list-group-item {% block whichactive1 %}{% endblock %}">Frederick <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span></a>
+                <a href="{% url 'imageprocessing:johannes' %}" class="list-group-item {% block whichactive2 %}{% endblock %}" >Johannes <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span></a>
+                <a href="{% url 'imageprocessing:jimothy' %}" class="list-group-item {% block whichactive3 %}{% endblock %}">Jimothy</a>
+                  <a href="{% url 'imageprocessing:lana' %}" class="list-group-item {% block whichactive4 %}{% endblock %}">Lana</a>
+              </div>
+                <div class="list-group">
+                    <a href="/" class="list-group-item">Back to home</a>
+                    <a href="https://github.com/ferozemohideen/django-machine-learning" class="list-group-item">Full source code</a>
+                </div>
         </div>
         <!-- /.col-lg-3 -->
         {% block pagecontent %}
-        Introduction to who's got glasses
+        <div class="col-lg-7 col-md-offset-1" style="background:white; border-radius:5%;">
+                <div class="container-fluid" >
+                <h1 style="color:blue">What is KNN?</h1>
+                    <p>
+                        In pattern recognition, the k-nearest neighbors algorithm (k-NN) is a non-parametric method used for classification and regression. In both cases, the input consists of the k closest training examples in the feature space. The output depends on whether k-NN is used for classification or regression:
+                    </p>
+                    <ul style="font-size:90%;">
+                        <li>
+                            In k-NN classification, the output is a class membership. An object is classified by a majority vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors (k is a positive integer, typically small). If k = 1, then the object is simply assigned to the class of that single nearest neighbor.
+                        </li>
+                        <li>
+                            In k-NN regression, the output is the property value for the object. This value is the average of the values of its k nearest neighbors.
+                        </li>
+                    </ul>
+                    <p>The following image shows this in action: </p>
+                    <div class="text-center"><img src="{% static 'images/exampleknn.gif' %}"/></div>
+                    <p>In this web app, we explore KNN <i>classification</i> using images, which are innately in a high dimension. If we represent
+                        each pixel with a dimension, then each image has over 10,000 dimensions! My goal was to see whether Python could compute
+                        nearest neighbors in that high of a dimension efficiently, and as it turned out, it can (although this webapp may take longer time than
+                        usual to refresh). In this setting specifically, I wanted to see how well the algorithm could distinguish between images of people wearing
+                        glasses, and images of people who aren't - whether there was enough difference between those two groups in the 10,304D feature space. Click
+                        on the people on the left and adjust the number of neighbors to see how well the program does! Otherwise, you can read up more on KNN and loads
+                        of other fun algorithms in <a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf"><i>An Introduction to Statistical Learning</i> (ISLR)</a>
+                        by Gareth James et al. (free online!).
+                    </p>
+                    <h1 style="color:blue">What is this for?</h1>
+                        <p>I took EGR 190: Introduction to Data Science with Dr. Paul Bendich and Dr. Stacy Tantum at Duke Spring 2018 and really loved the statistical learning topics
+                            we covered. We pretty much coded exclusively in MATLAB, though, which I think can be kinda clunky sometimes. I got a little <s>bored</s> curious, so I decided to branch off and
+                            redo an aspect of this project in Python, and I learned some <i>really</i> cool stuff. Click the link on the left for the full source code of the script
+                            and this webapp if you want to read more.
+                        </p>
+
+                </div>
+        </div>
         {% endblock %}
         <!-- /.col-lg-9 -->
       </div>
@@ -103,7 +136,7 @@
     <footer class="footer">
         <div class="container" style="justify-content: center;">
             <span class="text-muted">
-                This page was made with Python, Django, and Love. Feel free to reach out to me by email at fm87@duke.edu about any suggestions, and please visit my GitHub!
+                This page was made with Python, Django, and Love. Feel free to reach out to me by email at <a href="mailto:fm87@duke.edu">fm87@duke.edu</a> about any suggestions, and please visit my GitHub! :)
             </span> &nbsp;
             <a href="https://github.com/ferozemohideen" class="fa fa-github"></a>
         </div>

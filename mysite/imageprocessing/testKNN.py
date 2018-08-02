@@ -17,11 +17,11 @@ def knn(name, neighbors, dir):
     array = array.transpose(2,0,1).reshape(400,-1)
 
     df = pd.DataFrame(array)
-    scores = np.zeros(396)
+    scores = np.zeros(400)
 
     # start indices of glasses-wearers
     # website ones are 180, 190, 260 !!
-    indices = np.array([10,30,50,120,130,160,240,260, 280,310,340])
+    indices = np.array([10,30,50,120,130,160,180, 190, 260, 270, 280,300,330, 360])
     for i in indices:
         scores[i:i+10] = 1
 
@@ -31,7 +31,6 @@ def knn(name, neighbors, dir):
     # imgplot = plt.imshow(array.reshape(112, 92), cmap='gray')
     # plt.axis('off')
     # plt.show()
-    # fig.savefig('C:\\Users\\Feroze\\Google Drive\\DUKE 2016-2020\\PYTHON\\django-machine-learning\\mysite\\imageprocessing\\static/images/T\'Challa.png')
 
     # scale the data (doesn't make too much of a difference)
     # from sklearn.preprocessing import StandardScaler
@@ -42,8 +41,11 @@ def knn(name, neighbors, dir):
 
     fred = df.iloc[180]
     johannes = df.iloc[190]
+    jimothy = df.iloc[0]
+    lana = df.iloc[349]
 
-    df.drop(df.index[[180,190]], inplace=True)
+    df.drop(df.index[[180,190, 0, 349]], inplace=True)
+    scores = np.delete(scores, [180, 190, 0, 349])
 
     # train test split
     X_train, X_test, y_train, y_test = train_test_split(df, scores, test_size=0.3, random_state=42)
@@ -59,9 +61,17 @@ def knn(name, neighbors, dir):
         person = fred
     elif name == 2:
         person = johannes
+    elif name == 3:
+        person = jimothy
+    elif name == 4:
+        person = lana
 
     returnvals['certainty'] = knn.predict_proba(np.array(person).reshape(1,-1))
-    returnvals['certainty'] = returnvals['certainty'][0][0]*100
+
+    if name == 1 or name == 2:
+        returnvals['certainty'] = returnvals['certainty'][0][1]*100
+    else:
+        returnvals['certainty'] = returnvals['certainty'][0][0] * 100
     # print(returnvals['certainty'])
     returnvals['prediction'] = knn.predict(np.array(person).reshape(1,-1))
 
