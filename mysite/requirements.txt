@@ -9,12 +9,18 @@ colorlover==0.2.1
 cufflinks==0.13.0
 cycler==0.10.0
 decorator==4.3.0
+<<<<<<< HEAD
 dj-database-url==0.5.0
 Django==2.0.7
 django-heroku==0.3.1
 entrypoints==0.2.3
 Flask==1.0.2
 gunicorn==19.9.0
+=======
+Django==2.0.7
+entrypoints==0.2.3
+Flask==1.0.2
+>>>>>>> d933e1c415538f7016d9b23268ee0c3c65e74d68
 html5lib==1.0.1
 idna==2.7
 ipykernel==4.8.2
